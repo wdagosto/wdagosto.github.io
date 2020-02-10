@@ -1,0 +1,12 @@
+@import "iframe.css";
+
+/*
+* For now, looks like there's no need to 
+* separe css in more than one file... but
+* you gonna see how this gonna became later.
+*/
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
