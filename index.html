@@ -6,10 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- This title may change -->
     <title>W. D'Agosto | Timeline</title>
+    <base target="_blank">
+    <!-- Thirdparty assets-->
+    <link title="timeline-styles" rel="stylesheet" href="./thirdparty/knightlab/timeline3/css/timeline.css">    
+    <script src="./thirdparty/knightlab/timeline3/js/timeline.js"></script>
+    
     <link rel="stylesheet" href="./src/css/main.css">
+
 </head>
 <body>
-    <!-- The above iframe is just for testing purpose -->
-    <iframe id="knightlab" src="http://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=0ArAOTsarFwEcdEd5aVpXLWx3Z05VU0tZbEJkWl9Gamc&font=Bevan-PotanoSans&maptype=SATELLITE&lang=pt&start_at_end=true&height=650" frameborder="0"></iframe>
+
+    <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+    <script type="text/javascript">
+      var additionalOptions = {
+        start_at_end: true,
+        default_bg_color: {r:0, g:0, b:0},
+        timenav_height: 250
+      }
+
+      timeline = new TL.Timeline('timeline-embed',
+        'https://docs.google.com/spreadsheets/d/1m2nlU3myJYzbAt_9uaXfPcMJoPcwpQ1BGQT3HWUGLU0/'),
+        additionalOptions;
+    </script>
+
 </body>
 </html>
