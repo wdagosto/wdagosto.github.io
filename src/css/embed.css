@@ -1,0 +1,6 @@
+#timeline-embed {
+    padding: 0;
+    margin: 10px 0;
+    width: calc(100%);
+    height: calc(100vh - 20px);
+}

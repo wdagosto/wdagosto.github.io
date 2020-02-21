@@ -13267,7 +13267,7 @@ TL.Timeline = TL.Class.extend({
 			marker_width_min: 			100,					// Minimum Marker Width
 			marker_padding: 			5,						// Top Bottom Marker Padding
 			start_at_slide: 			0,
-			start_at_end: 				false,
+			start_at_end: 				true,
 			menubar_height: 			0,
 			skinny_size: 				650,
 			medium_size: 				800,
