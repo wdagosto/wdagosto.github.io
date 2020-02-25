@@ -12,6 +12,7 @@
     <!-- Thirdparty assets-->
     <link title="timeline-styles" rel="stylesheet" href="./thirdparty/knightlab/timeline3/css/timeline.css">    
     <script src="./thirdparty/knightlab/timeline3/js/timeline.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     
     <link rel="stylesheet" href="./src/css/main.css">
 
@@ -19,7 +20,7 @@
 <body>
 
     <div id='nightmode'>
-      <svg id="nightmode-ico" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.75 30.75">
+      <svg id="nightmode-ico" data-name="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.75 30.75">
         <defs>
           <style>
             .cls-1{fill:#000;}
@@ -33,17 +34,10 @@
 
     <div id='timeline-embed'></div>
     <script type="text/javascript">
-      var additionalOptions = {
-        start_at_end: true,
-        default_bg_color: {r:0, g:0, b:0},
-        timenav_height: 250
-      }
 
-      timeline = new TL.Timeline('timeline-embed',
-        'https://docs.google.com/spreadsheets/d/1m2nlU3myJYzbAt_9uaXfPcMJoPcwpQ1BGQT3HWUGLU0/'),
-        additionalOptions;
+      var timeline = new TL.Timeline('timeline-embed',
+        'https://docs.google.com/spreadsheets/d/1m2nlU3myJYzbAt_9uaXfPcMJoPcwpQ1BGQT3HWUGLU0/');
     </script>
-    
     <script src="./src/js/main.js"></script>
 
 </body>
