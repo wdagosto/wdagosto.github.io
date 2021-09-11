@@ -18,6 +18,7 @@ $(function() {
             $(".tl-attribution").css("background-color", "black");
             $(".tl-timeaxis").css({ "backgroundColor" : "#000" });
             $(".tl-timeaxis").css({ "backgroundColor" : "#000" });
+            document.getElementById("nightmode").title = "Modo Claro";
             theme = "dark";
         } else {
             //Background color
@@ -29,7 +30,7 @@ $(function() {
             $(".tl-timeaxis-background").css("background-color", "white");
             $(".tl-attribution").css("background-color", "white");
             $(".tl-timeaxis").css({ "backgroundColor" : "white" });
-
+            document.getElementById("nightmode").title = "Modo Escuro";
             theme = "light";
         }
     
